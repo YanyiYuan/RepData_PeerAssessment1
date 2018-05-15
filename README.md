@@ -1,5 +1,12 @@
 ## Introduction
 
+
+```R
+totalSteps[, .(meanSteps = mean(steps, na.rm = TRUE), medianSteps = median(steps, na.rm = TRUE))]##    meanSteps medianSteps
+## 1:  10766.19       10765
+
+```
+
 It is now possible to collect a large amount of data about personal
 movement using activity monitoring devices such as a
 [Fitbit](http://www.fitbit.com), [Nike
