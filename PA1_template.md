@@ -71,8 +71,8 @@ head(data.frame(TotalSteps))
 hist(TotalSteps,10, xlab="Total Steps per Day",main="Histogram of Total Steps per Day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
-  
+![](unnamed-chunk-4-1.png)<!-- -->
+ #PA1_template_files/figure-html/ 
   3. Calculate and report the mean and median of the total number of steps taken per day
 
 ```r
