@@ -71,7 +71,7 @@ head(data.frame(TotalSteps))
 hist(TotalSteps,10, xlab="Total Steps per Day",main="Histogram of Total Steps per Day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](unnamed-chunk-4-1.png)<!-- -->
   
   3. Calculate and report the mean and median of the total number of steps taken per day
 
@@ -103,7 +103,7 @@ AvgSteps <- data.frame(interval=names(AvgSteps),Avg=AvgSteps)
 plot(as.numeric(as.character(AvgSteps$interval)),AvgSteps$Avg,type="l",xlab="interval",ylab="Number of Steps",main="Time Series of Average Number of Steps by interval")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+![](unnamed-chunk-7-1.png)<!-- -->
   
 2.Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -156,7 +156,7 @@ TotalSteps.rm.NA <- tapply(activity_data2$steps,activity_data2$date,sum)
 hist(TotalSteps.rm.NA,10,xlab="Total Steps",main="Histogram of Total Number of Steps per day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
+![](unnamed-chunk-11-1.png)<!-- -->
 
 
 ```r
@@ -214,4 +214,4 @@ plot(AvgSteps.Weekdays$interval,AvgSteps.Weekdays$x,type="l",ylim=rng, xlab="Int
 plot(AvgSteps.Weekends$interval,AvgSteps.Weekends$x,type="l",ylim=rng, xlab="Interval",ylab="Number of Steps",main = "Average Number of Steps in Weekends",cex.main=.8)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
+![](unnamed-chunk-15-1.png)<!-- -->
